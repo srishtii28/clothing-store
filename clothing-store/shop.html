@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Quick basic styles to make the product grid look nice */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .shop h2 {
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product-card {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header.html or inside your main HTML file -->
+<header style="background-color: #ffc0cb; padding: 1rem 2rem;">
+    <nav style="display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="color: white; font-weight: 700; font-size: 1.8rem;">ClothingStore</h1>
+      <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0;">
+        <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">Home</a></li>
+        <li><a href="shop.html" style="color: white; text-decoration: none; font-weight: 500;">Shop</a></li>
+        <li><a href="about.html" style="color: white; text-decoration: none; font-weight: 500;">About</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 500;">Contact</a></li>
+        <li><a href="cart.html" style="color: white; text-decoration: none; font-weight: 500;">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <section class="shop">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Denim+Jacket" alt="Men's Denim Jacket">
+        <h3>Men's Denim Jacket</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Men\'s Denim Jacket', 49.99, 'https://via.placeholder.com/150x200?text=Denim+Jacket')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Hoodie" alt="Women's Hoodie">
+        <h3>Women's Hoodie</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Women\'s Hoodie', 39.99, 'https://via.placeholder.com/150x200?text=Hoodie')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Kids+T-Shirt" alt="Kids T-Shirt">
+        <h3>Kids T-Shirt</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Kids T-Shirt', 19.99, 'https://via.placeholder.com/150x200?text=Kids+T-Shirt')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Women+Trousers" alt="Women's Trousers">
+        <h3>Women's Trousers</h3>
+        <p>$34.99</p>
+        <button onclick="addToCart('Women\'s Trousers', 34.99, 'https://via.placeholder.com/150x200?text=Women+Trousers')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Men+T-Shirt" alt="Men's T-Shirt">
+        <h3>Men's T-Shirt</h3>
+        <p>$24.99</p>
+        <button onclick="addToCart('Men\'s T-Shirt', 24.99, 'https://via.placeholder.com/150x200?text=Men+T-Shirt')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Cap" alt="Unisex Cap">
+        <h3>Unisex Cap</h3>
+        <p>$14.99</p>
+        <button onclick="addToCart('Unisex Cap', 14.99, 'https://via.placeholder.com/150x200?text=Cap')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="shop.js"></script>
+</body>
+</html>
