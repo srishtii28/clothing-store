@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Quick basic styles to make the product grid look nice */
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
@@ -50,8 +49,7 @@
 </head>
 <body>
 
-  <!-- header.html or inside your main HTML file -->
-<header style="background-color: #ffc0cb; padding: 1rem 2rem;">
+  <header style="background-color: #ffc0cb; padding: 1rem 2rem;">
     <nav style="display: flex; justify-content: space-between; align-items: center;">
       <h1 style="color: white; font-weight: 700; font-size: 1.8rem;">ClothingStore</h1>
       <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0;">
@@ -63,56 +61,111 @@
       </ul>
     </nav>
   </header>
-  
-  
 
   <section class="shop">
     <h2>Our Products</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Denim+Jacket" alt="Men's Denim Jacket">
-        <h3>Men's Denim Jacket</h3>
-        <p>$49.99</p>
-        <button onclick="addToCart('Men\'s Denim Jacket', 49.99, 'https://via.placeholder.com/150x200?text=Denim+Jacket')">Add to Cart</button>
-      </div>
+    
+        
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Hoodie" alt="Women's Hoodie">
-        <h3>Women's Hoodie</h3>
-        <p>$39.99</p>
-        <button onclick="addToCart('Women\'s Hoodie', 39.99, 'https://via.placeholder.com/150x200?text=Hoodie')">Add to Cart</button>
-      </div>
+  <!-- NEW CATEGORY SECTIONS -->
 
+  <section id="scarf" class="shop">
+    <h2>🧣 Scarves</h2>
+    <div class="product-grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Kids+T-Shirt" alt="Kids T-Shirt">
-        <h3>Kids T-Shirt</h3>
-        <p>$19.99</p>
-        <button onclick="addToCart('Kids T-Shirt', 19.99, 'https://via.placeholder.com/150x200?text=Kids+T-Shirt')">Add to Cart</button>
+        <img src="https://via.placeholder.com/150x200?text=Pink+Floral+Scarf" alt="Pink Floral Scarf">
+        <h3>Pink Floral Scarf</h3>
+        <p>₹299</p>
+        <button onclick="addToCart('Pink Floral Scarf', 299, 'https://via.placeholder.com/150x200?text=Pink+Floral+Scarf')">Add to Cart</button>
       </div>
+      
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Winter+Wool+Scarf" alt="Winter Wool Scarf">
+        <h3>Winter Wool Scarf</h3>
+        <p>₹399</p>
+        <button onclick="addToCart('Winter Wool Scarf', 399, 'https://via.placeholder.com/150x200?text=Winter+Wool+Scarf')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
 
+  <section id="tops" class="shop">
+    <h2>👚 Tops</h2>
+    <div class="product-grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Women+Trousers" alt="Women's Trousers">
-        <h3>Women's Trousers</h3>
-        <p>$34.99</p>
-        <button onclick="addToCart('Women\'s Trousers', 34.99, 'https://via.placeholder.com/150x200?text=Women+Trousers')">Add to Cart</button>
+        <img src="https://via.placeholder.com/150x200?text=Casual+Crop+Top" alt="Casual Crop Top">
+        <h3>Casual Crop Top</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Casual Crop Top', 499, 'https://via.placeholder.com/150x200?text=Casual+Crop+Top')">Add to Cart</button>
       </div>
+      
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Printed+Tank+Top" alt="Printed Tank Top">
+        <h3>Printed Tank Top</h3>
+        <p>₹449</p>
+        <button onclick="addToCart('Printed Tank Top', 449, 'https://via.placeholder.com/150x200?text=Printed+Tank+Top')">Add to Cart</button>
+      </div>      
+    </div>
+  </section>
 
+  <section id="shirt" class="shop">
+    <h2>👕 Shirts</h2>
+    <div class="product-grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Men+T-Shirt" alt="Men's T-Shirt">
-        <h3>Men's T-Shirt</h3>
-        <p>$24.99</p>
-        <button onclick="addToCart('Men\'s T-Shirt', 24.99, 'https://via.placeholder.com/150x200?text=Men+T-Shirt')">Add to Cart</button>
+        <img src="https://via.placeholder.com/150x200?text=Classic+White+Shirt" alt="Classic White Shirt">
+        <h3>Classic White Shirt</h3>
+        <p>₹699</p>
+        <button onclick="addToCart('Classic White Shirt', 699, 'https://via.placeholder.com/150x200?text=Classic+White+Shirt')">Add to Cart</button>
       </div>
+      
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Denim+Shirt" alt="Denim Shirt">
+        <h3>Denim Shirt</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Denim Shirt', 799, 'https://via.placeholder.com/150x200?text=Denim+Shirt')">Add to Cart</button>
+      </div>      
+    </div>
+  </section>
 
+  <section id="coords" class="shop">
+    <h2>👗 Co-ords Set</h2>
+    <div class="product-grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/150x200?text=Cap" alt="Unisex Cap">
-        <h3>Unisex Cap</h3>
-        <p>$14.99</p>
-        <button onclick="addToCart('Unisex Cap', 14.99, 'https://via.placeholder.com/150x200?text=Cap')">Add to Cart</button>
+        <img src="https://via.placeholder.com/150x200?text=Summer+Co-ord+Set" alt="Summer Co-ord Set">
+        <h3>Summer Co-ord Set</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Summer Co-ord Set', 999, 'https://via.placeholder.com/150x200?text=Summer+Co-ord+Set')">Add to Cart</button>
       </div>
+      
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Formal+Co-ord+Set" alt="Formal Co-ord Set">
+        <h3>Formal Co-ord Set</h3>
+        <p>₹1299</p>
+        <button onclick="addToCart('Formal Co-ord Set', 1299, 'https://via.placeholder.com/150x200?text=Formal+Co-ord+Set')">Add to Cart</button>
+      </div>      
+    </div>
+  </section>
+
+  <section id="jewellery" class="shop">
+    <h2>💍 Jewellery</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Golden+Earrings" alt="Golden Earrings">
+        <h3>Golden Earrings</h3>
+        <p>₹199</p>
+        <button onclick="addToCart('Golden Earrings', 199, 'https://via.placeholder.com/150x200?text=Golden+Earrings')">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x200?text=Stone+Pendant" alt="Stone Pendant">
+        <h3>Stone Pendant</h3>
+        <p>₹249</p>
+        <button onclick="addToCart('Stone Pendant', 249, 'https://via.placeholder.com/150x200?text=Stone+Pendant')">Add to Cart</button>
+      </div>      
     </div>
   </section>
 
   <script src="shop.js"></script>
 </body>
 </html>
+
