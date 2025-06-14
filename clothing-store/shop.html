@@ -45,6 +45,25 @@
       cursor: pointer;
       border-radius: 4px;
     }
+    .category-card {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(255, 105, 135, 0.2);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  background-color: #ffe6ec;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 105, 135, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -61,6 +80,18 @@
       </ul>
     </nav>
   </header>
+
+  <section style="text-align: center; margin-top: 2rem;">
+    <h2 style="font-size: 2rem; color: #ff5c8d; font-weight: bold;">Shop by Category 🛍️</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem;">
+      <a href="#scarf" class="category-card">🧣 Scarf</a>
+      <a href="#tops" class="category-card">👚 Tops</a>
+      <a href="#shirt" class="category-card">👕 Shirt</a>
+      <a href="#co-ords" class="category-card">👗 Co-ords Set</a>
+      <a href="#jewellery" class="category-card">💍 Jewellery</a>
+    </div>
+  </section>
+  
 
   <section class="shop">
     <h2>Our Products</h2>
